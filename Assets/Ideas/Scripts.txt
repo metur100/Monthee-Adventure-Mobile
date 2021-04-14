@@ -1,0 +1,4 @@
+
+
+Moraju biti razliciti indeksi za svakog igraca.
+Kada pritisnemo confirm, ucitati oba igraca na zadanim indexima.

@@ -1,0 +1,7 @@
+1. Make GameOverUI - Script for each fight
+2. Name it Arena of free assets
+3. Make scene for each fight! Knight v. Ninja and Ninja v. Knight! Add Keyboards Controls for Knight and add Gamepad Control for Knight. That for all! Left selected player is keyboard and the right one is gamepad
+
+4. get other.gameObject.GetComponent<BulletHunter>(); -> create in BulletHunter IEnumerator to manage dmg from Bullet!
+5. Creating double character we can use SetIn, to put the character in the desired scene. We dont need to use 100 scene like before!
+6. Hunter and Paladin jump animation fix!

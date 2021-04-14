@@ -1,0 +1,105 @@
+Warrior
+1. Dash (2 chargea, charges an enemy) -------------------------------------- DONE
+2. Meleee Hit (basic damage) -------------------------------------------------- DONE
+3. Enrage (50 % dmg increase) ------------------------------------------------- DONE
+6. Block (reduce all damge taken for few seconds) ------------------------ DONE
+
+Mage
+1. Frostbolt (damages and slows) --------------------------------- DONE
+2. Blink (portuje karaktera x yardi po x osi) -------------------- DONE
+3. Ice Block (immunity) ------------------------------------------ DONE
+4. Pyro (long cast, much dmg) ------------------------------------ DONE
+
+Hunter
+1. Disengage (leapa backwards and forwards) ----------------------------------- DONE
+2. Freezing trap (postavlja trap koji stuna) --------------------- DONE
+3. Aimed Shot (basic dmg) ---------------------------------------- DONE
+4. Kornjaca (immunity) ------------------------------------------- DONE
+
+Paladin 
+1. Bubble (immunity)------------------------------- DONE
+2. Poni (?) (seda na konja i ubrzava) ------------- DONE
+3. Crusader Strike (basic dmg) -------------------- DONE
+4. Hammer of Justice (stun)------------------------ DONE
+
+Shaman
+1. Shielded (reduce damage taken for 50 %)
+2. Change the form (increase movement speed for 20 %, bude increase the cast time for 3 seconds!----other form movement speed normal, cast time normal)
+3. Elemental blast (deals more damage wh)
+4. Slow Totem (drop a totem that slows the enemy)
+
+Death Knight 
+1. Grip (privlaci protivnika)
+2. Wraith Walk (MS increase)
+3. Anti magic shell (shield/cc immunity)
+4. Scourge Strike (damage and dot)
+
+Priest
+1. Shadow Word Pain (dot)
+2. Dispersion (defensive)
+3. Shadow Form (% dmg increase)
+4. Void Bolt (basic dmg, produzuje dot)
+
+Rogue
+1. Stealth
+2. Kidney (stun)
+3. Cloak of shadows (immunity)
+4. Eviscerate (basic dmg)
+
+Monk
+1. Transcendence (ostavlja iluziju - switch)
+2. Fists of Fury (channel dmg)
+3. Karma (defensive, reflecta dmg)
+4. Torpedo (lansira se unapred, uradi dmg)
+
+Warlock
+1. Chaos Bolt (basic dmg)
+2. Gateway (dvosmerni portal)
+3. Immolate (dot)
+4. Resolve (defensive, cc immunity)
+
+Druid
+1. Starsurge (basic dmg)
+2. Bear form (defensive forma, smanjen dmg done)
+3. Moonfire (dot)
+4. Wild charge (disengage)
+
+Demon Hunter 
+1. Fel Rush (2 charge, lansira se unapred)
+2. Netherwalk (immunity i ms increase, ne moze da napada)
+3. Eye Beam (channel, % dmg increase par sekundi) (demon forma (?))
+4. Chaos Strike (basic dmg)
+
+
+General Fixes - to-do list:
+
+1. Animation on hit: HURT ------------------- DONE
+2. Jump effect fix. ------------------------- DONE
+3. Fall off platform: Player is dead text!--- DONE
+3. Player has won! -------------------------- DONE
+4. Healthbar on top; Icons and healthbar.----- DONE
+5. Castig bar above the health bar! ---------- DONE
+6. Fix male attack. -------------------------- IN PROGRESS
+7. Make it more beautiful generaly.---------- DONE
+8. OnCruch dont move.------------------------ DONE
+9. Implement the audio and music. ------------ DONE
+10. Cooldown visible! ------------------------ DONE
+11. If takes damage, flashes!----------------- DONE
+12. KnockBack on Colision! ------------------- DONE
+13. Njinja faceing Knight! ------------------- IN PROGRESS
+14. Knight should be MAGE! Njinja male! ------ IN PROGRESS
+15. Make latters for cooldowns visible!------- DONE
+16. Dash Animation on first hit - fix! ------- DONE
+17. Adding unity WEB GL! --------------------- DONE
+18. Make it more playable! ------------------- DONE
+19. Jump Attack!
+
+
+Unity asset store, the world where all champions are locked and put to suffering.
+Every week only few are choosen to fight for their destiny. 
+
+The choosen one are thrown in the battlefields where they have to fight to death.
+For this week only 4 of them  got the opportunity to fight in the battlefields of Unity. The one who wins is promised to live and be free. Only the strongest one can win and only with your help!
+
+So will you help the choosen one to concern the arena and be free?
+

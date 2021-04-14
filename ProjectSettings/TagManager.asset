@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Player_Knight
+  - Player_Ninja
+  - Player_Hunter
+  - Player_HolyKnight
+  - Player_Hunter_Num
+  - Player_HolyKnight_Num
+  - Player_Ninja_Num
+  - Player_Knight_Num
+  - Player_Wolf
+  - Player_Wolf_Num
+  - Player_Knight_Advanturer
+  - ShootAtMe
+  - Slime_AI
+  - Hide_AI
+  - Platform
+  - Trunk_AI
+  - Bee_AI
+  - Snail_AI
+  - Trunk_AI_2
+  - Trunk_AI_3
+  - Slime_AI_2
+  - Slime_AI_Patrol
+  - GM
+  - Snail_AI_2
+  - Turtle_AI
+  - BlueBird_AI
+  - BlueBird_AI_2
+  - Target_AI
+  - Target_AI_2
+  - Target_AI_3
+  - Bee_AI_2
+  - Snail_AI_3
+  - Slime_AI_3
+  - Trunk_AI_4
+  - Turtle_AI_2
+  - Ghost_AI
+  - Trunk_AI_5
+  - Snail_AI_4
+  - BlueBird_AI_3
+  - Turtle_AI_3
+  - Slime_AI_4
+  - StartPosition
+  - MonD_NPC
+  - Ghost_Dialog
+  - Moving_Platform
+  - Bat_AI
+  - Trunk_AI_7
+  - MonD_Ghost
+  - Suprise_Box
+  - Suprise_Box_2
+  - Trunk_AI_6
+  - BigStump
+  - GreenPig_AI
+  - Wall_FirstBoss
+  - MonD_BeforeFirstBoss
+  - DoTheQuestFirst
+  - MonD_AfterFirstBoss
+  - Plant_AI
+  - Plant_AI_2
+  - Radish_AI
+  - Bunny_AI
+  - Mushroom_AI
+  - Mushroom_AI_2
+  - Bunny_AI_2
+  - Mushroom_AI_3
+  - Radish_AI_3
+  - Bunny_AI_3
+  - Radish_AI_4
+  - Mushroom_AI_4
+  - Mushroom_AI_5
+  - Destroy_Wall_Upper
+  - Destroy_Wall_Middle
+  - Destroy_Wall_Lower
+  - Suprise_Box_3
+  - Chest_Box
+  - Chest_Box_2
+  - Chest_Box_3
+  - Rino_AI
+  - Rino_Flip
+  - Rino_Hit_Wall
+  - Bat_AI_2
+  - Bat_AI_3
+  - Bat_AI_4
+  - Bat_AI_5
+  - Bat_AI_6
+  - Rino_AI_2
+  - Rino_AI_3
+  - Rino_AI_4
+  - Trunk_AI_8
+  - Trunk_AI_9
+  - Trunk_AI_10
+  - Trunk_AI_11
+  - Rino_AI_5
+  - Rino_AI_6
+  - Bat_AI_7
+  - Bat_AI_8
+  - Bat_AI_9
+  - Dialog_Upper_Cave
+  - Dialog_Lower_Cave
+  - Destroy_Wall_End
+  - Chest_Box_4
+  - Radish_AI_2
+  - Dialog_Start
+  - Dodge_Layer
+  - Mini_Ghost_AI
+  - Dialog_GreenPig
+  - Boss
+  - Body_GreenPig_AI
+  - Slime_AI_5
+  - Slime_AI_6
+  - Slime_AI_7
+  - Slime_AI_8
+  - Turtle_AI_4
+  - Turtle_AI_5
+  - Turtle_AI_6
+  - Turtle_AI_7
+  - Bee_AI_3
+  - Bee_AI_4
+  - Bee_AI_5
+  - Snail_AI_5
+  - Snail_AI_6
+  - Snail_AI_7
+  - Snail_AI_8
+  - BlueBird_AI_4
+  - BlueBird_AI_5
+  - BlueBird_AI_6
+  - BlueBird_AI_7
+  - BlueBird_AI_8
+  - Suprise_Box_4
+  - Suprise_Box_5
+  - Suprise_Box_6
+  - Dialog_After_Ghost
+  - Slime_Patrol_Sound
+  - Spawn_Box_Txt
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - HeatlhBar
+  - Ninja
+  - Knight
+  - Sky
+  - Hunter
+  - BulletHunter
+  - FireBall
+  - FrostBall
+  - MeleeAttackTrigger
+  - TrapHunter
+  - HolyKnight
+  - StunHolyKnight
+  - Enemy_AI
+  - AttackPrefab_AI
+  - Props_Advanturer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 445440341
+    locked: 0
+  - name: UI
+    uniqueID: 175352285
+    locked: 0
+  - name: Sky
+    uniqueID: 3046670955
+    locked: 0
+  - name: Hils
+    uniqueID: 746852777
+    locked: 0
+  - name: Tree
+    uniqueID: 3101920987
+    locked: 0
+  - name: Platform
+    uniqueID: 1591901089
+    locked: 0
+  - name: Player
+    uniqueID: 1742992847
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
