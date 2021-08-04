@@ -138,6 +138,7 @@ TagManager:
   - Dialog_After_Ghost
   - Slime_Patrol_Sound
   - Spawn_Box_Txt
+  - Cameleon_AI
   layers:
   - Default
   - TransparentFX
