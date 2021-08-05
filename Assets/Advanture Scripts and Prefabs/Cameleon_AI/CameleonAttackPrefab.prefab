@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9739cff58933833469f45bacf2b44759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 6211963281479019780, guid: c04d008f88d26c946a5dfa09dc795079, type: 3}
   speed: 30
   bulletRB: {fileID: 6936453096834697007}
   damageDone: -20
