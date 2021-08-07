@@ -375,6 +375,10 @@ public class FireBallKnight : MonoBehaviour
                 RinoHealth6 eHealth88 = other.gameObject.GetComponent<RinoHealth6>();
                 eHealth88.ModifyHealth(damageDoneFireB);
                 break;
+            case "Chicken_AI":
+                ChickenHealth eHealth89 = other.gameObject.GetComponent<ChickenHealth>();
+                eHealth89.ModifyHealth(damageDoneFireB);
+                break;
         }
         Instantiate(impactEffect, transform.position, Quaternion.identity);
         FindObjectOfType<AudioManager>().Play("FireBallExplosion");

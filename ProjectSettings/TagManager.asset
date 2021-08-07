@@ -139,6 +139,7 @@ TagManager:
   - Slime_Patrol_Sound
   - Spawn_Box_Txt
   - Cameleon_AI
+  - Chicken_AI
   layers:
   - Default
   - TransparentFX
