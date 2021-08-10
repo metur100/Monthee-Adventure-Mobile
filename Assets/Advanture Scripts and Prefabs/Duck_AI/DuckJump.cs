@@ -23,9 +23,9 @@ public class DuckJump : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (transform.position.x < 400f)
+		if (transform.position.x < 220f)
 			dirX = 1f;
-		else if (transform.position.x > 225)
+		else if (transform.position.x > 400f)
 			dirX = -1f;
 	}
 
@@ -56,7 +56,7 @@ public class DuckJump : MonoBehaviour
 	{
 		switch (col.tag)
 		{
-			case "Player_Knight_Advanturer":
+			case "BigStump":
 				rb.AddForce(Vector2.up * 2000f);
 				animator.SetTrigger("IsJumping");
 				break;

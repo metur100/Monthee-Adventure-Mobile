@@ -69,14 +69,18 @@ public class DuckFollowAttack : MonoBehaviour
     {
         if (transform.position.x < player.position.x)
         {
+            Vector2 target = new Vector2(player.position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
             //rb2d.velocity = new Vector2(moveSpeed, 0);
-            rb2d.AddForce(Vector2.up * 20000f);
+            rb2d.AddForce(Vector2.up * 2000000f);
             transform.localScale = new Vector2(-70, 70);
         }
         else
         {
+            Vector2 target = new Vector2(player.position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
             //rb2d.velocity = new Vector2(-moveSpeed, 0);
-            rb2d.AddForce(Vector2.up * 20000f);
+            rb2d.AddForce(Vector2.up * 2000000f);
             transform.localScale = new Vector2(70, 70);
         }
     }

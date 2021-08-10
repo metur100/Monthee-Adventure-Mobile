@@ -378,6 +378,10 @@ public class MeleePrefabKnightAdvanturer : MonoBehaviour
                 ChickenHealth eHealth89 = other.gameObject.GetComponent<ChickenHealth>();
                 eHealth89.ModifyHealth(damageDoneMeleeAttack);
                 break;
+            case "Duck_AI":
+                DuckHealth eHealth90 = other.gameObject.GetComponent<DuckHealth>();
+                eHealth90.ModifyHealth(damageDoneMeleeAttack);
+                break;
         }
     }
     IEnumerator DestroyGameobject()
