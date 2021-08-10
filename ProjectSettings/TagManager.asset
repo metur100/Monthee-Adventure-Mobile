@@ -141,6 +141,9 @@ TagManager:
   - Cameleon_AI
   - Chicken_AI
   - Duck_AI
+  - RedBird_AI
+  - Flip
+  - GreenPlant_AI
   layers:
   - Default
   - TransparentFX

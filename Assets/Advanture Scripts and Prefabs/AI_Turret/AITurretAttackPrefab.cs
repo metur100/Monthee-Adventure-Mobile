@@ -10,7 +10,7 @@ public class AITurretAttackPrefab : MonoBehaviour
     float speed;
     [SerializeField]
     Rigidbody2D bulletRB;
-    public int damageDone = -20;
+    public int damageDone;
     // Start is called before the first frame update
     void Start()
     {
