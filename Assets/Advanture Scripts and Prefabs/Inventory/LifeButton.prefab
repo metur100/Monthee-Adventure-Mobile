@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2057618609413206292
 CanvasRenderer:
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -159,6 +160,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeIncrease: {fileID: 7309600030946586774, guid: 17f156385a33a1e4ba37a840cf570f95,
-    type: 3}
-  lifeEffect: {fileID: 101131272237219943, guid: dda2932c2bea8d149aeee0855668b854,
     type: 3}

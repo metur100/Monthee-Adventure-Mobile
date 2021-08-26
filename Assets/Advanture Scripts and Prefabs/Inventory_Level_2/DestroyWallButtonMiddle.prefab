@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3108376517933919323
 CanvasRenderer:
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -160,7 +161,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabWall: {fileID: 5884002553199779309, guid: 4280c08708c84c8499cc31c4b34d5dbd,
     type: 3}
-  effect: {fileID: 4404722625188640928, guid: ea5009c5a7b60174fae9df6ee67a9cc9, type: 3}
   player: {fileID: 2044680525612048600, guid: 4831051d3264a5b46ae465f497d7d935, type: 3}
-  activateWallDestroyed: {fileID: 9142777911810879486, guid: b1706dcca45c27e4c8af3a0126244653,
-    type: 3}
