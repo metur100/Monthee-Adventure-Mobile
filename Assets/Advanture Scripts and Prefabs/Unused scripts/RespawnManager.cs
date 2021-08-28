@@ -5,7 +5,7 @@ using UnityEngine;
 public class RespawnManager : MonoBehaviour
 {
     public GameObject currentCheckPoint;
-    public PlayerKnightPosition player;
+    public PlayerMovementAdvanturerKnight player;
     public void RespawnPlayer()
     {
         player.transform.position = currentCheckPoint.transform.position;

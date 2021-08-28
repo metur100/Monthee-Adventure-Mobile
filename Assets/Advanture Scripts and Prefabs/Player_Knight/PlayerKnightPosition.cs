@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerKnightPosition : MonoBehaviour
 {
     //private GameMaster gm;
-    public GameObject gameSaved;
-    public GameObject gameLoaded;
+    //public GameObject gameSaved;
+    //public GameObject gameLoaded;
     //void Start()
     //{
     //    gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -14,12 +14,12 @@ public class PlayerKnightPosition : MonoBehaviour
     //}
     public void SavePlayer()
     {
-        gameSaved.SetActive(true);
+        //gameSaved.SetActive(true);
         SaveSystem.SavePlayer(this);
     }
     public void LoadPlayer()
     {
-        gameLoaded.SetActive(true);
+        //gameLoaded.SetActive(true);
         PlayerData data = SaveSystem.LoadPlayer();
         Vector2 position;
 
