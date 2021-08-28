@@ -9,7 +9,6 @@ public class HealthKnightAdvanturer : MonoBehaviour
 {
     public int maxHealth;
     public event Action<float> OnHealthPctChanged = delegate { };
-    public GameObject gameOverUI;
     public Animator animator;
     public int currentHealth;
     Renderer rend;
