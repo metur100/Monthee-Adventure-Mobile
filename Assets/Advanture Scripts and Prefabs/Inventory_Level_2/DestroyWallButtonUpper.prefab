@@ -123,8 +123,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5858124972486885306}
-        m_TargetAssemblyTypeName: ShootingDestroyWallUpper, Assembly-CSharp
-        m_MethodName: Use
+        m_TargetAssemblyTypeName: ShootingDestroyWall, Assembly-CSharp
+        m_MethodName: InstantiateObjectOnlyInSpecificArea
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -161,4 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabWall: {fileID: 5894238510036661735, guid: 26a728494f5b0c448938a5e8ab7524a7,
     type: 3}
+  tip: {fileID: 4088167380287951889, guid: bdad9fe5f6ea2a4468a15a784dd89b95, type: 3}
   player: {fileID: 2044680525612048600, guid: 4831051d3264a5b46ae465f497d7d935, type: 3}
+  wall: {fileID: 8660701264030722992, guid: 89a0832da24a4a249a01b5969afc532b, type: 3}
+  radius: 40

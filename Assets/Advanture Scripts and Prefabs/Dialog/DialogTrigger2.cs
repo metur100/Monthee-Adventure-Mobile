@@ -6,6 +6,8 @@ public class DialogTrigger2 : MonoBehaviour
 {
     public GameObject triggerStart;
     public GameObject activateDialogStart;
+    public GameObject triggerGravityTip;
+    public GameObject activateGravityTip;
     public GameObject triggerUpperCave;
     public GameObject activateDialogUpperCave;
     public GameObject triggerLowerCave;
@@ -58,6 +60,11 @@ public class DialogTrigger2 : MonoBehaviour
             moveSpeed.normalMovementSpeed = 0f;
             dashMove.dashSpeed = 0f;
             Destroy(triggerAfterGhost);
+        }
+        if (collision.CompareTag("Gravity_Tip"))
+        {
+            activateGravityTip.SetActive(true);
+            Destroy(triggerGravityTip);
         }
     }
 }
