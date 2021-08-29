@@ -7,8 +7,6 @@ public class PauseMenuButton : MonoBehaviour
     public static bool gameIsPaused = false;
 
     public GameObject pausedMenuUI;
-    public GameObject gameSaved;
-    public GameObject gameLoaded;
     public GameObject settings;
     private bool executeGamePause;
 
@@ -30,8 +28,6 @@ public class PauseMenuButton : MonoBehaviour
     public void Resume()
     {
         pausedMenuUI.SetActive(false);
-        gameSaved.SetActive(false);
-        gameLoaded.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
