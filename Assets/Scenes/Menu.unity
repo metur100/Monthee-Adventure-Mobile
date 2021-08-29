@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 02ae98445a1e75c4aa99c331e9557034, type: 2}
-  ResolutionDropdown: {fileID: 0}
   qualityDropdown: {fileID: 1063642455}
   qualityLevels:
   - {fileID: 11400000, guid: 302f0fd5dd94c504790822542d707bb9, type: 2}
@@ -10373,7 +10372,7 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1998283798}
   m_ItemImage: {fileID: 0}
-  m_Value: 2
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: Low
