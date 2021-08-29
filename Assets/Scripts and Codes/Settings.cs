@@ -4,12 +4,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class Settings : MonoBehaviour
 {
     public AudioMixer audioMixer;
     Resolution[] resolutions;
     public Dropdown ResolutionDropdown;
+    public Dropdown qualityDropdown;
+    public RenderPipelineAsset[] qualityLevels;
 
     private void Start()
     {
@@ -35,6 +38,7 @@ public class Settings : MonoBehaviour
         ResolutionDropdown.AddOptions(options);
         ResolutionDropdown.value = CurrentResolutionIndex;
         ResolutionDropdown.RefreshShownValue();
+        qualityDropdown.value = QualitySettings.GetQualityLevel();
     }
     public void SetResolution(int ResolutionIndex)
     {
@@ -53,6 +57,8 @@ public class Settings : MonoBehaviour
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        QualitySettings.renderPipeline = qualityLevels[qualityIndex];
+
     }
     public void BackButton()
     {
