@@ -25,7 +25,7 @@ public class StartCutscene : MonoBehaviour
     {
         isCutSceneOn = false;
         camAnim.SetBool("IsCutscene", false);
-        moveSpeed.normalMovementSpeed = 400; 
+        moveSpeed.normalMovementSpeed = 400;
     }
     void CreatePlatform()
     {

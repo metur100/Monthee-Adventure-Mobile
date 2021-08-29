@@ -6,6 +6,8 @@ public class DialogTrigger2 : MonoBehaviour
 {
     public GameObject triggerStart;
     public GameObject activateDialogStart;
+    public GameObject triggerSkullRune;
+    public GameObject activateTipSkullRune;
     public GameObject triggerGravityTip;
     public GameObject activateGravityTip;
     public GameObject triggerUpperCave;
@@ -65,6 +67,11 @@ public class DialogTrigger2 : MonoBehaviour
         {
             activateGravityTip.SetActive(true);
             Destroy(triggerGravityTip);
+        }
+        if (collision.CompareTag("Skull_Rune_Tip"))
+        {
+            activateTipSkullRune.SetActive(true);
+            Destroy(triggerSkullRune);
         }
     }
 }
