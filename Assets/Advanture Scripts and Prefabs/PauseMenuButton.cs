@@ -8,6 +8,7 @@ public class PauseMenuButton : MonoBehaviour
 
     public GameObject pausedMenuUI;
     public GameObject settings;
+    public GameObject resetLevel;
     private bool executeGamePause;
 
     void Update()
@@ -42,6 +43,21 @@ public class PauseMenuButton : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
+    public void LoadLevel2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Advanture2");
+    }
+    public void LoadLevel1()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Advanture");
+    }
+    public void LoadTutorial()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Tutorial");
+    }
     public void QuitGame()
     {
         Application.Quit();
@@ -49,6 +65,14 @@ public class PauseMenuButton : MonoBehaviour
     public void OpenSettings()
     {
         settings.SetActive(true);
+    }
+    public void ResetLevelPopUp()
+    {
+        resetLevel.SetActive(true);
+    }
+    public void NoResetLevel()
+    {
+        resetLevel.SetActive(false);
     }
     public void CloseSettings()
     {

@@ -6,7 +6,6 @@ public class ShootingDestroyWall : MonoBehaviour
 {
     public GameObject prefabWall;
     public GameObject tip;
-    //public GameObject effect;
     public Transform player;
     public Transform wall;
     public float radius;
@@ -30,14 +29,7 @@ public class ShootingDestroyWall : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("Destroy_Wall");
         Instantiate(prefabWall, player.transform.position, Quaternion.identity);
-        //Instantiate(effect, player.transform.position, Quaternion.identity);
         CameraShaker.Instance.ShakeOnce(.9f, .7f, 0.2f, 0.2f);
         Destroy(gameObject);
     }
-    //IEnumerator AbilityTip()
-    //{
-    //    Instantiate(tip, player.transform.position, Quaternion.identity);
-    //    yield return new WaitForSeconds(5f);
-    //    tip.SetActive(false);
-    //}
 }
