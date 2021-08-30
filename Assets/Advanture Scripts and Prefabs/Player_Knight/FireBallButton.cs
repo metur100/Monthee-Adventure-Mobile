@@ -10,7 +10,7 @@ public class FireBallButton : MonoBehaviour
     public GameObject bulletPrefab;
     public Animator animator;
     public Image shootingBullet;
-    private readonly float cooldownBullet = 1.5f;
+    private readonly float cooldownBullet = 2f;
     private bool isCooldownBullet = false;
     private bool isPressed = false;
 

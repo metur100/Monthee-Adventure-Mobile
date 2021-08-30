@@ -13,7 +13,7 @@ public class DashMoveButton : MonoBehaviour
     private float dashTime;
     private readonly float startDashTime = 0.2f;
     private int direction;
-    private readonly float dashCooldown = 0.4f;
+    private readonly float dashCooldown = 1.5f;
     private bool isDashCooldown = false;
     public ParticleSystem dash;
     private bool isPressed = false;

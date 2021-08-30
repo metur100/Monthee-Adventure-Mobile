@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class RinoChaseAttack : MonoBehaviour
 	public float speed = 10f;
 	public bool MoveRight;
 	public Animator animator;
-	private readonly float ignoreCollisionOverTime = 0.6f;
+	//private readonly float ignoreCollisionOverTime = 0.6f;
 
 	void Update()
 	{
@@ -26,11 +27,11 @@ public class RinoChaseAttack : MonoBehaviour
 	}
 	void OnTriggerEnter2D(Collider2D trig)
 	{
-		if (trig.gameObject.CompareTag("Rino_Flip"))
-		{
-			animator.SetTrigger("IsHitWall");
-			StartCoroutine(GetDizzy());
-		}
+		//if (trig.gameObject.CompareTag("Rino_Flip"))
+		//{
+		//	animator.SetTrigger("IsHitWall");
+		//	StartCoroutine(GetDizzy());
+		//}
 		if (trig.gameObject.CompareTag("Rino_Flip"))
 		{
 			if (MoveRight)
@@ -41,14 +42,17 @@ public class RinoChaseAttack : MonoBehaviour
 			{
 				MoveRight = true;
 			}
+
+			animator.SetTrigger("IsHitWall");
+			//StartCoroutine(GetDizzy());
 		}
 	}
-	IEnumerator GetDizzy()
-	{
-		speed = 0f;
-		animator.SetBool("IsWalking", false);
-		yield return new WaitForSeconds(ignoreCollisionOverTime);
-		speed = 50f;
-		animator.SetBool("IsWalking", true);
-	}
+	//IEnumerator GetDizzy()
+	//{
+	//	speed = 0f;
+	//	animator.SetBool("IsWalking", false);
+	//	yield return new WaitForSeconds(ignoreCollisionOverTime);
+	//	speed = 50f;
+	//	animator.SetBool("IsWalking", true);
+	//}
 }

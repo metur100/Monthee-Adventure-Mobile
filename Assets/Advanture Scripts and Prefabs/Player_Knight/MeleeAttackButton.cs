@@ -11,7 +11,7 @@ public class MeleeAttackButton : MonoBehaviour
     public Animator animator;
     public Image shootingMeleeAttack;
     public MeleePrefabKnightAdvanturer meleeDamage;
-    private float coolddownMeleeAttacking = 0.2f;
+    private readonly float coolddownMeleeAttacking = 0.5f;
     private bool isCooldownMeleeAttack = false;
     private bool isMeleeAttacking = false;
     private float maleeAttackTimer = 0.0f;
@@ -25,7 +25,7 @@ public class MeleeAttackButton : MonoBehaviour
     }
     public void Update()
     {
-        if (isPressed)
+        if (isPressed && isCooldownMeleeAttack == false)
         {
             Instantiate(meleePrefab, firePointMeleeAttack.position, firePointMeleeAttack.rotation);
             isCooldownMeleeAttack = true;

@@ -8,7 +8,7 @@ public class BlockDamageButton : MonoBehaviour
     public GameObject blockPrefab;
     public Animator animator;
     public Image shootingBlock;
-    private readonly float cooldownBlock = 1.5f;
+    private readonly float cooldownBlock = 3f;
     private bool isCooldownBlock = false;
     private bool isPressed;
 
