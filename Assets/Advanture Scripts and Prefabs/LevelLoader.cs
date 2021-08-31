@@ -13,6 +13,8 @@ public class LevelLoader : MonoBehaviour
     int levelIsUnlocked;
     public Button[] buttons;
 
+    public GameObject levelsRestarted;
+
     void Start()
     {
         levelIsUnlocked = PlayerPrefs.GetInt("levelIsUnlocked", 1);
@@ -56,5 +58,16 @@ public class LevelLoader : MonoBehaviour
     public void ResetLevels()
     {
         PlayerPrefs.DeleteKey("levelIsUnlocked");
+        LevelsRestarted();
+    }
+    public void LevelsRestarted()
+    {
+        StartCoroutine(DisableTxt());
+    }
+    IEnumerator DisableTxt()
+    {
+        levelsRestarted.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        levelsRestarted.SetActive(false);
     }
 }

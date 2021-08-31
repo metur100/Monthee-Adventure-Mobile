@@ -9,6 +9,8 @@ public class PauseMenuButton : MonoBehaviour
     public GameObject pausedMenuUI;
     public GameObject settings;
     public GameObject resetLevel;
+    public GameObject exitGame;
+    public GameObject goToMainMenu;
     private bool executeGamePause;
 
     void Update()
@@ -70,9 +72,25 @@ public class PauseMenuButton : MonoBehaviour
     {
         resetLevel.SetActive(true);
     }
+    public void ExitGamePopUp()
+    {
+        exitGame.SetActive(true);
+    }
+    public void GoMainMenuPopUp()
+    {
+        goToMainMenu.SetActive(true);
+    }
     public void NoResetLevel()
     {
         resetLevel.SetActive(false);
+    }
+    public void NoExitGame()
+    {
+        exitGame.SetActive(false);
+    }
+    public void NoMainMenu()
+    {
+        goToMainMenu.SetActive(false);
     }
     public void CloseSettings()
     {
