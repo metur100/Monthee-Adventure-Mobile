@@ -11,7 +11,7 @@ public class DashMoveButton : MonoBehaviour
     public Rigidbody2D rb;
     public float dashSpeed;
     private float dashTime;
-    private readonly float startDashTime = 0.2f;
+    private readonly float startDashTime = 0.3f;
     private int direction;
     private readonly float dashCooldown = 1.5f;
     private bool isDashCooldown = false;

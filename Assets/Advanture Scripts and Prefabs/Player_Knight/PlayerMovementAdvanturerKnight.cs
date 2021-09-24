@@ -15,10 +15,8 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround;
-    private bool isJumping;
     public float jumpForce;
 
-    private float jumpTimeCounter;
     public float jumpTime;
 
     public ParticleSystem dust;
@@ -26,13 +24,17 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     SpriteRenderer spriteColor;
 
     public Joystick joystick;
+
+    public bool isJumpingPressed;
+    public JumpAnimation jumpAnim;
     void Start()
     {
+        isJumpingPressed = false;
         spriteColor = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
-        if (normalMovementSpeed >= 800f)
+        if (normalMovementSpeed >= 12000f)
         {
             //Decrease boosting speed and color
             spriteColor.color = new Color(0, 255, 15, 255);
@@ -67,14 +69,15 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
-        if (isGrounded == true && verticalMove >= .5f)
+        if (isGrounded == true && isJumpingPressed)
         {
             FindObjectOfType<AudioManager>().Play("Jump");
             animator.SetTrigger("takeOf");
-            isJumping = true;
             rb.velocity = Vector2.up * jumpForce;
             CreateDust();
+            isJumpingPressed = false;
         }
+        isJumpingPressed = false;
         if (isGrounded == true)
         {
             animator.SetBool("IsJumping", false);
@@ -83,23 +86,23 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
         }
-
-        if (verticalMove >= .5f && isJumping == true)
+        //if (isJumpingPressed && isJumping == true)
+        //{
+        //    if (jumpTimeCounter > 0)
+        //    {
+        //        rb.velocity = Vector2.up * jumpForce;
+        //        jumpTimeCounter -= Time.deltaTime;
+        //    }
+        //    else
+        //    {
+        //        isJumping = false;
+        //        isJumpingPressed = false;
+        //    }
+        //}
+        if (isJumpingPressed)
         {
-            if (jumpTimeCounter > 0)
-            {
-                rb.velocity = Vector2.up * jumpForce;
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            else
-            {
-                isJumping = false;
-            }
-        }
-        if (verticalMove >= .5f)
-        {
-            isJumping = false;
             CreateDust();
+            isJumpingPressed = false;
         }
         if (verticalMove <= -0.5f)
         {
@@ -116,7 +119,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     }
     void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, isJumping);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, isJumpingPressed);
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -137,7 +140,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     {
         yield return new WaitForSeconds(boostTime);
         spriteColor.color = new Color(255, 255, 255, 255);
-        normalMovementSpeed = 400f;
+        normalMovementSpeed = 800f;
     }
     IEnumerator DecreaseJumpForce()
     {
@@ -150,5 +153,16 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         yield return new WaitForSeconds(boostTime);
         spriteColor.color = new Color(255, 255, 255, 255);
         rb.gravityScale = 40f;
+    }
+    public void ExecuteJump()
+    {
+        isJumpingPressed = true;
+        jumpAnim.PlayJumpAnim();
+        StartCoroutine(StopJumping());
+    }
+    IEnumerator StopJumping()
+    {
+        yield return new WaitForSeconds(1f);
+        jumpAnim.StopJumpAnim();
     }
 }

@@ -11,7 +11,7 @@ public class MovementBoost : MonoBehaviour
         {
             isTriggered = true;
             PlayerMovementAdvanturerKnight speedBoost = collision.gameObject.GetComponent<PlayerMovementAdvanturerKnight>();
-            speedBoost.normalMovementSpeed = 800f;
+            speedBoost.normalMovementSpeed = 16000f;
         }
         Destroy(gameObject);
     }
