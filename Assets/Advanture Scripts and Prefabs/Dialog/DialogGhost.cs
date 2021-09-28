@@ -61,7 +61,7 @@ public class DialogGhost : MonoBehaviour
         if (index == sentences.Length - 1)
         {
             activateDialog.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
+            moveSpeed.normalMovementSpeed = 500f;
             dashMove.dashSpeed = 200f;
             chase.chasingDistance = 500f;
             Destroy(shield);
@@ -73,8 +73,8 @@ public class DialogGhost : MonoBehaviour
         activateWallAndEnemies.SetActive(true);
         Instantiate(triggerWall, positionWall.position, Quaternion.identity);
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
         chase.chasingDistance = 500f;
         Destroy(shield);
     }

@@ -65,8 +65,8 @@ public class DialogLowerCave : MonoBehaviour
         {
             activateDialog.SetActive(false);
             activateTriggerCreatePlatform.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
-            dashMove.dashSpeed = 200f;
+            moveSpeed.normalMovementSpeed = 500f;
+            dashMove.dashSpeed = 300f;
         }
     }
     public void SkipDialog()
@@ -76,7 +76,7 @@ public class DialogLowerCave : MonoBehaviour
         activateTriggerCreatePlatform.SetActive(true);
         activateDialog.SetActive(false);
         //activateTriggerCreatePlatform.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
     }
 }

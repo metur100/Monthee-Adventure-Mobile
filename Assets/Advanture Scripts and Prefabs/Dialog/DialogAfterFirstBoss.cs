@@ -69,7 +69,7 @@ public class DialogAfterFirstBoss : MonoBehaviour
         activatePortalNextLevel.SetActive(true);
         winSound.Play();
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
     }
 }

@@ -34,7 +34,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     }
     void Update()
     {
-        if (normalMovementSpeed >= 12000f)
+        if (normalMovementSpeed >= 1000f)
         {
             //Decrease boosting speed and color
             spriteColor.color = new Color(0, 255, 15, 255);
@@ -53,6 +53,10 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
             StartCoroutine(ResetGravity());
         }
 
+        float verticalMove = joystick.Vertical;
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+
         if (joystick.Horizontal >= 0.2f)
         {
             horizontalMove = normalMovementSpeed;
@@ -65,10 +69,6 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         {
             horizontalMove = 0f;
         }
-        float verticalMove = joystick.Vertical;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-
         if (isGrounded == true && isJumpingPressed)
         {
             FindObjectOfType<AudioManager>().Play("Jump");
@@ -140,7 +140,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     {
         yield return new WaitForSeconds(boostTime);
         spriteColor.color = new Color(255, 255, 255, 255);
-        normalMovementSpeed = 800f;
+        normalMovementSpeed = 500f;
     }
     IEnumerator DecreaseJumpForce()
     {

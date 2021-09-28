@@ -57,7 +57,7 @@ public class Dialog : MonoBehaviour
         if (index == sentences.Length - 1)
         {
             activateDialog.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
+            moveSpeed.normalMovementSpeed = 500f;
             dashMove.dashSpeed = 200f;
         }
     }
@@ -66,7 +66,7 @@ public class Dialog : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Next_Dialog");
         activateDialog.SetActive(false);
         activateQuestUI.OpenQuestWindow();
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
     }
 }

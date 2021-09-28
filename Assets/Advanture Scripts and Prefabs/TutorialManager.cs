@@ -16,6 +16,7 @@ public class TutorialManager : MonoBehaviour
     private bool fireButton;
     private bool dashButton;
     private bool meleeButton;
+    private bool jumpButton;
     private bool pauseGameButton;
 
     void Update()
@@ -40,8 +41,7 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 2)
         {
-            float verticalMove = joystick.Vertical;
-            if (verticalMove >= .5f)
+            if (jumpButton)
             {
                 popUpIndex++;
             }
@@ -132,6 +132,10 @@ public class TutorialManager : MonoBehaviour
     public void BlockButton()
     {
         blockButton = true;
+    }
+    public void JumpButton()
+    {
+        jumpButton = true;
     }
     public void PauseGame()
     {

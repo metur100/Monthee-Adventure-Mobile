@@ -57,7 +57,7 @@ public class Dialog2 : MonoBehaviour
         if (index == sentences.Length - 1)
         {
             activateDialog.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
+            moveSpeed.normalMovementSpeed = 500f;
             dashMove.dashSpeed = 200f;
         }
     }
@@ -65,7 +65,7 @@ public class Dialog2 : MonoBehaviour
     {
         activateQuestUI.OpenQuestWindow();
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
     }
 }

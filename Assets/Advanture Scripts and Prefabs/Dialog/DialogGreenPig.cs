@@ -67,9 +67,9 @@ public class DialogGreenPig : MonoBehaviour
             activateWallAndEnemies.SetActive(true);
             Instantiate(triggerWall, positionWall.position, Quaternion.identity);
             activateDialog.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
+            moveSpeed.normalMovementSpeed = 500f;
             chaseDistance.agroRange = 500f;
-            dashMove.dashSpeed = 200f;
+            dashMove.dashSpeed = 300f;
             Destroy(shield);
         }
     }
@@ -79,9 +79,9 @@ public class DialogGreenPig : MonoBehaviour
         activateWallAndEnemies.SetActive(true);
         Instantiate(triggerWall, positionWall.position, Quaternion.identity);
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
+        moveSpeed.normalMovementSpeed = 500f;
         chaseDistance.agroRange = 500f;
-        dashMove.dashSpeed = 200f;
+        dashMove.dashSpeed = 300f;
         Destroy(shield);
     }
 }

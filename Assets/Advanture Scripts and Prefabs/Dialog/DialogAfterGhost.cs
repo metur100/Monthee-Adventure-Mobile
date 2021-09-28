@@ -65,8 +65,8 @@ public class DialogAfterGhost : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Next_Dialog");
         winSound.Play();
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
         activateCompletedGameUI.SetActive(true);
     }
 }

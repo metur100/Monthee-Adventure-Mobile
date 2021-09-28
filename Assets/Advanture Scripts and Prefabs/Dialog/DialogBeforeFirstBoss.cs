@@ -54,8 +54,8 @@ public class DialogBeforeFirstBoss : MonoBehaviour
         if (index == sentences.Length - 1)
         {
             activateDialog.SetActive(false);
-            moveSpeed.normalMovementSpeed = 400f;
-            dashMove.dashSpeed = 200f;
+            moveSpeed.normalMovementSpeed = 500f;
+            dashMove.dashSpeed = 300f;
         }
         if (index == sentences.Length - 2)
         {
@@ -66,8 +66,8 @@ public class DialogBeforeFirstBoss : MonoBehaviour
     public void SkipDialog()
     {
         activateDialog.SetActive(false);
-        moveSpeed.normalMovementSpeed = 400f;
-        dashMove.dashSpeed = 200f;
+        moveSpeed.normalMovementSpeed = 500f;
+        dashMove.dashSpeed = 300f;
         FindObjectOfType<AudioManager>().Play("MonD_CreatePlatform");
         movingPlatform.SetActive(true);
     }
