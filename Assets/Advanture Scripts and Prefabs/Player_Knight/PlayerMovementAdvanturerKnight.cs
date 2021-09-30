@@ -17,8 +17,6 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     public LayerMask whatIsGround;
     public float jumpForce;
 
-    public float jumpTime;
-
     public ParticleSystem dust;
     private readonly float boostTime = 3f;
     SpriteRenderer spriteColor;
@@ -69,15 +67,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         {
             horizontalMove = 0f;
         }
-        if (isGrounded == true && isJumpingPressed)
-        {
-            FindObjectOfType<AudioManager>().Play("Jump");
-            animator.SetTrigger("takeOf");
-            rb.velocity = Vector2.up * jumpForce;
-            CreateDust();
-            isJumpingPressed = false;
-        }
-        isJumpingPressed = false;
+
         if (isGrounded == true)
         {
             animator.SetBool("IsJumping", false);
@@ -86,24 +76,7 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
         }
-        //if (isJumpingPressed && isJumping == true)
-        //{
-        //    if (jumpTimeCounter > 0)
-        //    {
-        //        rb.velocity = Vector2.up * jumpForce;
-        //        jumpTimeCounter -= Time.deltaTime;
-        //    }
-        //    else
-        //    {
-        //        isJumping = false;
-        //        isJumpingPressed = false;
-        //    }
-        //}
-        if (isJumpingPressed)
-        {
-            CreateDust();
-            isJumpingPressed = false;
-        }
+
         if (verticalMove <= -0.5f)
         {
             crouch = true;
@@ -132,10 +105,6 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
         if (col.gameObject.CompareTag("Moving_Platform"))
             this.transform.parent = null;
     }
-    void CreateDust()
-    {
-        dust.Play();
-    }
     IEnumerator DecreaseSpeed()
     {
         yield return new WaitForSeconds(boostTime);
@@ -156,9 +125,15 @@ public class PlayerMovementAdvanturerKnight : MonoBehaviour
     }
     public void ExecuteJump()
     {
-        isJumpingPressed = true;
-        jumpAnim.PlayJumpAnim();
-        StartCoroutine(StopJumping());
+        if (isGrounded == true)
+        {
+            rb.velocity = Vector2.up * jumpForce;
+            FindObjectOfType<AudioManager>().Play("Jump");
+            animator.SetTrigger("takeOf");
+            dust.Play();
+            jumpAnim.PlayJumpAnim();
+            StartCoroutine(StopJumping());
+        }
     }
     IEnumerator StopJumping()
     {
